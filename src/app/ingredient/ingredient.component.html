@@ -1,0 +1,14 @@
+<h1>Ingredient Page</h1>
+<div *ngIf="drink">
+  <table>
+    <tr>
+      <td>
+        <img [src]="drink.strDrinkThumb" alt="{{ drink.strDrink }}" />
+      </td>
+      <td>
+        <h2>{{ drink.strDrink }}</h2>
+        <p *ngFor="let ing of ingredients">{{ ing }}</p>
+      </td>
+    </tr>
+  </table>
+</div>
